@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+ruby '2.0.0'
+#ruby-gemset=railstutorial_rails_4_0
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -30,8 +32,21 @@ gem 'sdoc',         '0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#!!!!!!!! VERY IMPORTANT!!!!!!!!
+gem 'tzinfo'
+#!!!!!!!! DON'T START SERVER WITHOUT THIS LINE. should be before gem 'tzinfo-data'!!!!!!!!!!!
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'bcrypt',                  '3.1.7'
+gem 'faker',                   '1.4.2'
+gem 'carrierwave',             '0.10.0'
+gem 'mini_magick',             '3.8.0'
+gem 'fog',                     '1.23.0'
+gem 'will_paginate',           '3.0.7'
+gem 'bootstrap-will_paginate', '0.0.10'
+gem 'bootstrap-sass',          '3.2.0.0'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
@@ -39,7 +54,8 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug',      '3.4.0'
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '2.0.0.beta3'
+  #gem 'web-console', '2.0.0.beta3'
+  gem 'web-console', :platforms => :ruby
   gem 'spring',      '1.1.3'
 end
 
@@ -53,3 +69,6 @@ group :production do
   gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
 end
+
+gem 'rubysl-pty', :platforms => :ruby
+gem 'web-console-rails3', :platforms => :ruby
