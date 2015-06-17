@@ -17,5 +17,9 @@ class StaticPagesControllerTest < ActionController::TestCase
     get :about
     assert_response :success
     assert_select "title", "About | Ruby on Rails Tutorial Sample App"
+<<<<<<< HEAD
    end
+=======
+  end
+>>>>>>> static-pages-exercises
 end
