@@ -57,12 +57,14 @@ group :development, :test do
   #gem 'web-console', '2.0.0.beta3'
   gem 'web-console', :platforms => :ruby
   gem 'spring',      '1.1.3'
+  gem 'colorize', '~> 0.7.7'
 end
 
 group :test do
   gem 'minitest-reporters', '1.0.5'
   gem 'mini_backtrace',     '0.1.3'
   gem 'guard-minitest',     '2.3.1'
+#  gem 'wdm', '>= 0.1.0'
 end
 
 group :production do
@@ -73,4 +75,4 @@ end
 gem 'rubysl-pty', :platforms => :ruby
 gem 'web-console-rails3', :platforms => :ruby
 
-
+ 
