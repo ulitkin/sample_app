@@ -5,7 +5,7 @@ module ApplicationHelper
     if page_title.empty?								# Boolean test
       base_title										# Implicit return
     else
-      "#{base_title} | #{page_title}" 					# The equivalent interpolation
+      " #{page_title} | #{base_title} " 					# The equivalent interpolation
     end
   end
 end
